@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\Pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\targetver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\targetver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "targetver.h",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\targetver.h",
+              "RelativeDocumentMoniker": "ChessProject\\targetver.h",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\targetver.h",
+              "RelativeToolTip": "ChessProject\\targetver.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-15T16:49:29.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "stdafx.h",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\stdafx.h",
+              "RelativeDocumentMoniker": "ChessProject\\stdafx.h",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\stdafx.h",
+              "RelativeToolTip": "ChessProject\\stdafx.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-15T16:49:27.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "stdafx.cpp",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\stdafx.cpp",
+              "RelativeDocumentMoniker": "ChessProject\\stdafx.cpp",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\stdafx.cpp",
+              "RelativeToolTip": "ChessProject\\stdafx.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-15T16:49:25.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\Source.cpp",
+              "RelativeDocumentMoniker": "ChessProject\\Source.cpp",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\Source.cpp",
+              "RelativeToolTip": "ChessProject\\Source.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-15T16:49:23.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pipe.h",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\Pipe.h",
+              "RelativeDocumentMoniker": "ChessProject\\Pipe.h",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\Magshimim\\Year2\\C\u002B\u002B\\Week7\\Ekronot-ChessProject-EdenEshel-GuyGoldstein\\ChessSolution\\ChessProject\\Pipe.h",
+              "RelativeToolTip": "ChessProject\\Pipe.h",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-15T16:49:22.161Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
