@@ -6,6 +6,7 @@
 
 We make ChessYou play Chess
 You don't play chess, doulingo will come
+![Logo](aPawnMaybe.png)
 
 ## DO NOT READ
 Pls do a friend streak with me
