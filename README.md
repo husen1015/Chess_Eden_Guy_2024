@@ -16,3 +16,10 @@ We burn discord
 live laugh love Smug Shiba
 
 
+
+Hey, you there,
+I think you better get
+it over with before,
+I end your family.
+I have them locked up in a tower,
+en el piso más alto.
