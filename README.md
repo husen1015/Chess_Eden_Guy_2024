@@ -15,6 +15,7 @@ You know how to chess?
 We burn discord
 live laugh love Smug Shiba
 
+![Logo](notACat.png)
 
 
 Hey, you there,
@@ -23,3 +24,5 @@ it over with before,
 I end your family.
 I have them locked up in a tower,
 en el piso más alto.
+
+![Logo](anOwlMaybe.png)
