@@ -1,16 +1,13 @@
-# Chess 
+# Chess Project
 
 ![Logo](MagshimimLogo.png)
 
-## HELP ME
+## PLAY CHESS
 
 We make ChessYou play Chess
 You don't play chess, doulingo will come
 
-
-## הוראות
-
-### כלים חשובים
+## DO NOT READ
 Pls do a friend streak with me
 I do russas
 
