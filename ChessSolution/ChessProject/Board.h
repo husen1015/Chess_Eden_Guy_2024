@@ -14,6 +14,8 @@ public:
 	Board();
 
 	void initNormalBoard(); // Initializes a normal chess board at the start of the game
+	void printBoard() const; // Prints the board code, same thing we send to Frontend
+	void createPieces();
 
 	static std::string calcPlaceByNumber(const int numPlace);
 
