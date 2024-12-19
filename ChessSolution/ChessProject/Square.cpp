@@ -32,9 +32,3 @@ void Square::setIsOccupied(const bool isOccupied)
     this->_isOccupied = isOccupied;
 }
 
-// Other
-
-Piece& Square::getPiece() const
-{
-    
-}

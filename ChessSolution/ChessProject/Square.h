@@ -18,8 +18,6 @@ public:
 	// Setters
 	void setIsOccupied(const bool isOccupied);
 
-	// Other
-	Piece& getPiece() const; //Optional
 
 private:
 	std::string _place;

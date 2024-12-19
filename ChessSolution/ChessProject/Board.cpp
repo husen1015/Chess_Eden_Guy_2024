@@ -6,17 +6,24 @@ Board::Board()
 	
 	for (int i = 0; i < CHESS_BOARD_SIZE; i++)
 	{
-		Square newSquare(true, "1");
+		Square newSquare(true, calcPlaceByNumber(i));
 		this->_squares.push_back(newSquare);
-}
-
-
-std::string Board::calcPlaceByNumber(const int numPlace)
-{
-
-	return std::string();
+	}
 }
 
 void Board::initNormalBoard()
 {
+}
+
+std::string Board::calcPlaceByNumber(const int numPlace)
+{
+	std::string coloumn = "";
+	std::string row = "";
+	std::string place = "";
+
+	coloumn = numPlace % 8 + 'a';
+	row = '8' - (numPlace / 8);
+	place = coloumn + row;
+
+	return place;
 }
