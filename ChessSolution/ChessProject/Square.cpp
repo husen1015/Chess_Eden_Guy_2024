@@ -1,10 +1,9 @@
 #include "Square.h"
 
-Square::Square(bool isWhite)
+
+Square::Square(const bool isWhite, const std::string place):
+    _isWhite(isWhite), _isOccupied(false), _place(place)
 {
-    _piece;
-    _isWhite = isWhite;
-    _isOccupied = false;
 }
 
 
@@ -12,29 +11,30 @@ Square::~Square()
 {
 }
 
-Piece& Square::getPiece() const
-{
-    // TODO: insert return statement here
-}
+
+// Getters
 
 bool Square::getIsOccupied() const
 {
-<<<<<<< HEAD
-    return false;
-=======
-    return _isOccupied;
->>>>>>> 5657faba6a1a9431113c46eae1729b115d0f9a16
+    return this->_isOccupied;
 }
 
 bool Square::getIsWhite() const
 {
-<<<<<<< HEAD
-    return false;
+    return this->_isWhite;
 }
 
-void Square::setPiece(Piece& piece)
+
+// Setters
+
+void Square::setIsOccupied(const bool isOccupied)
 {
-=======
-    return _isWhite;
->>>>>>> 5657faba6a1a9431113c46eae1729b115d0f9a16
+    this->_isOccupied = isOccupied;
+}
+
+// Other
+
+Piece& Square::getPiece() const
+{
+    
 }

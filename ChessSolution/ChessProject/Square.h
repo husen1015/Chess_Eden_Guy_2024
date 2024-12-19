@@ -8,20 +8,20 @@ class Piece;
 class Square
 {
 public:
-	Square(bool isWhite);
+	Square(const bool isWhite, const std::string place);
 	~Square();
 
 	// Getters
-	Piece& getPiece() const;
 	bool getIsOccupied() const;
 	bool getIsWhite() const;
 
 	// Setters
-	void setPiece(Piece& piece);
-	
+	void setIsOccupied(const bool isOccupied);
+
+	// Other
+	Piece& getPiece() const; //Optional
 
 private:
-	Piece& _piece;
 	std::string _place;
 	bool _isOccupied;
 	bool _isWhite;
