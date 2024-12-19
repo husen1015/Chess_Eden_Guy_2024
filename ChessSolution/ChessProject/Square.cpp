@@ -19,14 +19,22 @@ Piece& Square::getPiece() const
 
 bool Square::getIsOccupied() const
 {
+<<<<<<< HEAD
     return false;
+=======
+    return _isOccupied;
+>>>>>>> 5657faba6a1a9431113c46eae1729b115d0f9a16
 }
 
 bool Square::getIsWhite() const
 {
+<<<<<<< HEAD
     return false;
 }
 
 void Square::setPiece(Piece& piece)
 {
+=======
+    return _isWhite;
+>>>>>>> 5657faba6a1a9431113c46eae1729b115d0f9a16
 }

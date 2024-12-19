@@ -1,4 +1,7 @@
 #pragma once
+#include "Square.h"
+
+class Square;
 
 class Piece
 {
@@ -14,4 +17,5 @@ public:
 	void setIsWhite(bool isWhite);
 
 	virtual void move() = 0;
+	virtual bool checkMoveIsValid() = 0;
 };

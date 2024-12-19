@@ -1,5 +1,9 @@
 #pragma once
+
+#include <string>
 #include "Piece.h"
+
+class Piece;
 
 class Square
 {
@@ -18,6 +22,7 @@ public:
 
 private:
 	Piece& _piece;
+	std::string _place;
 	bool _isOccupied;
 	bool _isWhite;
 
