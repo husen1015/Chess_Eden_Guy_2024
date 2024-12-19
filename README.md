@@ -6,6 +6,7 @@
 
 We make ChessYou play Chess
 You don't play chess, doulingo will come
+![Logo](aPawnMaybe.png)
 
 ## DO NOT READ
 Pls do a friend streak with me
@@ -15,6 +16,7 @@ You know how to chess?
 We burn discord
 live laugh love Smug Shiba
 
+![Logo](notACat.png)
 
 
 Hey, you there,
@@ -23,3 +25,5 @@ it over with before,
 I end your family.
 I have them locked up in a tower,
 en el piso más alto.
+
+![Logo](anOwlMaybe.png)
