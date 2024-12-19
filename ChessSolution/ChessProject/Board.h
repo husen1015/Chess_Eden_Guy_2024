@@ -1,8 +1,11 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "Square.h"
 
 #define CHESS_BOARD_SIZE 64
+
+class Square;
 
 class Board
 {
