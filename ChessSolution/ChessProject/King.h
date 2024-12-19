@@ -1,12 +1,20 @@
 #pragma once
 
 #include "Piece.h"
-#include "Square.h"
+
+class King : public Piece
+{
+public:
+	virtual bool checkMoveIsValid() override;
+};
+
+// what is this???
 
 //Need to change / delete
-class Piece : virtual public Piece { /* ... */ };
+/*
+class Piece : virtual public Piece { /* ...  };
 
-class Square : virtual public Square { /* ... */ };
+class Square : virtual public Square { /* ...  };
 
 class King : public Piece, public Square
 {
@@ -17,3 +25,4 @@ public:
 	//Getters
 private:
 };
+*/

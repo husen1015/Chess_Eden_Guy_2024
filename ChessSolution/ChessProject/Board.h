@@ -4,6 +4,14 @@
 #include <string>
 #include "Square.h"
 
+#include "Piece.h"
+#include "Rook.h"
+#include "Knight.h"
+#include "Bishop.h"
+#include "Queen.h"
+#include "King.h"
+#include "Pawn.h"
+
 #define CHESS_BOARD_SIZE 64
 
 class Square;

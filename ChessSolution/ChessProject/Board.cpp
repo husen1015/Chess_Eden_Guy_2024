@@ -37,12 +37,13 @@ void Board::createPieces()
 		switch (currChar)
 		{
 		case 'r':
-			Piece 
-			this->_pieces.push_back(
+			Rook newRook(true);
+			this->_pieces.push_back(newRook);
 			break;
 
 		default:
 			std::cerr << "Error at Board::createPieces - invalid board code" << std::endl;
+		}
 	}
 }
 
