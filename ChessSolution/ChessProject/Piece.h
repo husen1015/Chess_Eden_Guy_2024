@@ -1,12 +1,8 @@
 #pragma once
-#include "Square.h"
-
-class Square;
 
 class Piece
 {
-private:
-	bool _isWhite;
+
 public:
 	Piece(bool isWhite);
 	~Piece();
@@ -18,4 +14,7 @@ public:
 
 	virtual void move() = 0;
 	virtual bool checkMoveIsValid() = 0;
+
+protected:
+	bool _isWhite;
 };
