@@ -1,10 +1,13 @@
 #pragma once
 
+#include <iostream>
+#include "Board.h"
+
 class Piece
 {
 
 public:
-	Piece(bool isWhite);
+	Piece(const bool isWhite, const std::string place);
 	~Piece();
 
 	//Getters
@@ -12,9 +15,13 @@ public:
 	//Setters
 	void setIsWhite(bool isWhite);
 
-	virtual void move() = 0;
-	virtual bool checkMoveIsValid() = 0;
+	bool checkIfEatsOwnPiece(std::string dst);
+
+	virtual void move();
+	virtual bool checkMoveIsValid();
+	virtual bool checkIfMoveRevealsCheck();
 
 protected:
+	std::string _place;
 	bool _isWhite;
 };

@@ -1,8 +1,8 @@
 #include "Piece.h"
 
-Piece::Piece(bool isWhite)
+Piece::Piece(const bool isWhite, const std::string place):
+	 _place(place), _isWhite(isWhite)
 {
-	_isWhite = isWhite;
 }
 
 Piece::~Piece()
@@ -18,4 +18,9 @@ bool Piece::getIsWhite() const
 void Piece::setIsWhite(bool isWhite)
 {
 	_isWhite = isWhite;
+}
+
+bool Piece::checkIfEatsOwnPiece(std::string moveCode)
+{
+	return false;
 }

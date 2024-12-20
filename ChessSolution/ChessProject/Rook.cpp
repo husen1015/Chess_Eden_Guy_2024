@@ -1,6 +1,6 @@
 #include "Rook.h"
 
-Rook::Rook(const bool isWhite) :
+Rook::Rook(const bool isWhite, const std::string place) :
     Piece(isWhite)
 {
 }

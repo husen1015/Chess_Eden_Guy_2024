@@ -5,9 +5,10 @@ class Rook : public Piece
 {
 public:
 
-	Rook(const bool isWhite);
+	Rook(const bool isWhite, const std::string place);
 
 	virtual bool checkMoveIsValid() override;
+	virtual bool checkIfMoveRevealsCheck() override;
 };
 
 /*
