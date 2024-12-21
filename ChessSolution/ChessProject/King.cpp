@@ -15,6 +15,11 @@ bool King::checkIfMoveSuitsPieceAbilites(const std::string dst) const
     return checkKingMovement(this->_place, dst);
 }
 
+std::string King::getPieceType() const
+{
+    return "King";
+}
+
 bool King::checkKingMovement(const std::string src, const std::string dst)
 {
     int rowMovement = getRowMovement(src, dst);

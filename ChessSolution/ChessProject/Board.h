@@ -35,7 +35,7 @@ public:
 	// Helper methods
 	Piece* getPieceByIndex(const int index) const;
 	Piece* getPieceByPlace(const std::string place) const;
-
+	Piece* getPieceByTypeAndIsWhite(const std::string type, const bool isWhite) const;
 
 	// Helper static functions
 	static std::string calcPlaceByIndex(const int index);

@@ -23,14 +23,13 @@ public:
 
 	// Virtual methods
 	virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const = 0;
-
+	virtual std::string getPieceType() const = 0;
 
 	// Static helper functions
 	static int getRowMovement(const std::string src, const std::string dst);
 	static int getColoumnMovement(const std::string src, const std::string dst);
 	
 protected:
-	char _id;
 	bool _isWhite;
 	std::string _place;
 };

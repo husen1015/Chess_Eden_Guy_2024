@@ -43,7 +43,7 @@ bool Board::checkMoveIsValid(const std::string moveCode) const
 bool Board::checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const
 {
 	int i = 0;
-	std::vector<Piece*> oppositeColorPieces;
+	Piece* currPlayerKing = getPieceByTypeAndIsWhite("King", isKingWhite);
 	Piece* piece = nullptr;
 
 	for (i = 0; i < CHESS_BOARD_SIZE; i++)
@@ -159,6 +159,22 @@ Piece* Board::getPieceByIndex(const int index) const
 Piece* Board::getPieceByPlace(const std::string place) const
 {
 	return this->_pieces[calcIndexByPlace(place)];
+}
+
+Piece* Board::getPieceByTypeAndIsWhite(const std::string type, const bool isWhite) const
+{
+	int i = 0;
+	Piece* piece = nullptr;
+
+	for (i = 0; i < CHESS_BOARD_SIZE; i++)
+	{
+		piece = this->_pieces[i];
+		if (piece->getPieceType() == type && piece->getIsWhite() == isWhite)
+		{
+			return piece;
+		}
+	}
+	return nullptr;
 }
 
 
