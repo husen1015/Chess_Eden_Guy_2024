@@ -1,6 +1,8 @@
 #pragma once
 
 #include <iostream>
+#include "cmath"
+
 #include "Board.h"
 
 class Piece
