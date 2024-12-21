@@ -15,10 +15,7 @@ bool Queen::checkIfMoveSuitsPieceAbilites(const std::string dst) const
 
 bool Queen::checkQueenMovement(const std::string src, const std::string dst)
 {
-    bool diagonalMove = std::abs((src[0] - 'a') - (dst[0] - 'a')) == std::abs((src[1] - '0') - (dst[1] - '0'));
-    bool straightMove = (std::abs((src[0] - 'a') - (dst[0] - 'a')) == 0 && std::abs((src[1] - '0') - (dst[1] - '0')) != 0) || (std::abs((src[0] - 'a') - (dst[0] - 'a')) != 0 && std::abs((src[1] - '0') - (dst[1] - '0')) == 0);
-
-    return diagonalMove || straightMove;
+    return Bishop::checkBishopMovement(src, dst) || Rook::checkRookMovement(src, dst);
 }
 
 /*bool Queen::checkMoveIsValid()

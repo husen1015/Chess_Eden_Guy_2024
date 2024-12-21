@@ -15,10 +15,10 @@ bool Knight::checkIfMoveSuitsPieceAbilites(const std::string dst) const
 
 bool Knight::checkKnightMovement(const std::string src, const std::string dst)
 {
-    bool rowDifference = std::abs((src[0] - 'a') - (dst[0] - 'a')) == 2 && std::abs((src[1] - '0') - (dst[1] - '0')) == 1;
-    bool columnDifference = std::abs((src[0] - 'a') - (dst[0] - 'a')) == 1 && std::abs((src[1] - '0') - (dst[1] - '0')) == 2;
+    int rowMovement = getRowMovement(src, dst);
+    int coloumnMovement = getColoumnMovement(src, dst);
 
-    return rowDifference || columnDifference;
+    return (rowMovement == 2 && coloumnMovement == 1) || (rowMovement == 1 && coloumnMovement == 2);
 }
 
 /*bool Knight::checkMoveIsValid()

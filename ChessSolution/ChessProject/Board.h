@@ -28,7 +28,7 @@ public:
 	bool tryToMove(const std::string moveCode);
 	virtual bool checkMoveIsValid(const std::string moveCode) const;
 	bool checkIfEatsOwnPiece(Piece* piece, const std::string dst) const;
-	bool checkIfMoveRevealsCheck(const std::string dst) const;
+	bool checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const;
 	bool checkIfMoveChangesPosition(const std::string src, const std::string dst) const;
 
 
@@ -42,7 +42,6 @@ public:
 	static int calcIndexByPlace(const std::string place);
 
 
-	void tryToMove(const std::string moveCode);
 
 private:
 	std::string _code;
