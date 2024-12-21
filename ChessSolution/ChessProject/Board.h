@@ -2,7 +2,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "Square.h"
 
 #include "Piece.h"
 #include "Rook.h"
@@ -13,8 +12,8 @@
 #include "Pawn.h"
 
 #define CHESS_BOARD_SIZE 64
+#define CHESS_BOARD_SIZE 8
 
-class Square;
 
 class Board
 {
@@ -25,10 +24,27 @@ public:
 	void printBoard() const; // Prints the board code, same thing we send to Frontend
 	void createPieces();
 
-	static std::string calcPlaceByNumber(const int numPlace);
+	// Move piece methods
+	bool tryToMove(const std::string moveCode);
+	virtual bool checkMoveIsValid(const std::string moveCode) const;
+	bool checkIfEatsOwnPiece(Piece* piece, const std::string dst) const;
+	bool checkIfMoveRevealsCheck(const std::string dst) const;
+	bool checkIfMoveChangesPosition(const std::string src, const std::string dst) const;
+
+
+	// Helper methods
+	Piece* getPieceByIndex(const int index) const;
+	Piece* getPieceByPlace(const std::string place) const;
+
+
+	// Helper static functions
+	static std::string calcPlaceByIndex(const int index);
+	static int calcIndexByPlace(const std::string place);
+
+
+	void tryToMove(const std::string moveCode);
 
 private:
 	std::string _code;
-	std::vector<Square> _squares;
-	std::vector<Piece> _pieces;
+	std::vector<Piece*> _pieces;
 };

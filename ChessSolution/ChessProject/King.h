@@ -5,24 +5,8 @@
 class King : public Piece
 {
 public:
-	virtual bool checkMoveIsValid() override;
-};
-
-// what is this???
-
-//Need to change / delete
-/*
-class Piece : virtual public Piece { /* ...  };
-
-class Square : virtual public Square { /* ...  };
-
-class King : public Piece, public Square
-{
-public:
-	King(bool isWhite);
+	King(const bool isWhite, const std::string place);
 	~King();
 
-	//Getters
-private:
+	virtual bool checkMoveIsValid(const std::string newPlace) override;
 };
-*/
