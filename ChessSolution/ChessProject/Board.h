@@ -28,21 +28,20 @@ public:
 	bool tryToMove(const std::string moveCode);
 	virtual bool checkMoveIsValid(const std::string moveCode) const;
 	bool checkIfEatsOwnPiece(Piece* piece, const std::string dst) const;
-	bool checkIfMoveRevealsCheck(const std::string dst) const;
+	bool checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const;
 	bool checkIfMoveChangesPosition(const std::string src, const std::string dst) const;
 
 
 	// Helper methods
 	Piece* getPieceByIndex(const int index) const;
 	Piece* getPieceByPlace(const std::string place) const;
-
+	Piece* getPieceByTypeAndIsWhite(const std::string type, const bool isWhite) const;
 
 	// Helper static functions
 	static std::string calcPlaceByIndex(const int index);
 	static int calcIndexByPlace(const std::string place);
 
 
-	void tryToMove(const std::string moveCode);
 
 private:
 	std::string _code;

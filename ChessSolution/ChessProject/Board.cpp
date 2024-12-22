@@ -27,8 +27,34 @@ bool Board::tryToMove(const std::string moveCode)
 	return false;
 }
 
-bool Board::checkIfMoveRevealsCheck(const std::string dst) const
+bool Board::checkMoveIsValid(const std::string moveCode) const
 {
+	
+	std::string src = moveCode.substr(0, 2);
+	std::string dst = moveCode.substr(2, 2);
+	Piece* piece = this->getPieceByPlace(src);
+
+	return 
+		checkIfEatsOwnPiece(piece, dst) &&
+		piece->checkIfMoveSuitsPieceAbilites(dst) &&
+		checkIfMoveRevealsCheck(piece->getIsWhite(), dst);
+}
+
+bool Board::checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const
+{
+	int i = 0;
+	Piece* currPlayerKing = getPieceByTypeAndIsWhite("King", isKingWhite);
+	Piece* piece = nullptr;
+
+	for (i = 0; i < CHESS_BOARD_SIZE; i++)
+	{
+		piece = this->_pieces[i];
+		if (piece->getIsWhite() != isKingWhite)
+		{
+			oppositeColorPieces.push_back(piece);
+		}
+		else if (piece
+	}
 	
 }
 
@@ -48,17 +74,6 @@ bool Board::checkIfEatsOwnPiece(Piece* piece, const std::string dst) const
 }
 
 
-bool Board::checkMoveIsValid(const std::string moveCode) const
-{
-	
-	std::string src = moveCode.substr(0, 2);
-	std::string dst = moveCode.substr(2, 2);
-	Piece* piece = this->getPieceByPlace(src);
-
-	return checkIfEatsOwnPiece(piece, dst) &&
-		checkIfMoveRevealsCheck(dst) &&
-		piece->checkIfMoveSuitsPieceAbilites(dst);
-}
 
 
 
@@ -101,27 +116,27 @@ void Board::createPieces()
 
 		// WHITE PIECES
 		case 'R':
-			Rook * newRook = new Rook(false, place);
+			Rook * newRook = new Rook(true, place);
 			this->_pieces.push_back(newRook);
 			break;
 
 		case 'N':
-			Knight * newRook = new Knight(false, place);
+			Knight * newRook = new Knight(true, place);
 			this->_pieces.push_back(newKnight);
 			break;
 
 		case 'B':
-			Bishop * newRook = new Bishop(false, place);
+			Bishop * newRook = new Bishop(true, place);
 			this->_pieces.push_back(newBishop);
 			break;
 
 		case 'Q':
-			Queen * newRook = new Queen(false, place);
+			Queen * newRook = new Queen(true, place);
 			this->_pieces.push_back(newQueen);
 			break;
 
 		case 'K':
-			King * newRook = new King(false, place);
+			King * newRook = new King(true, place);
 			this->_pieces.push_back(newKing);
 			break;
 
@@ -144,6 +159,22 @@ Piece* Board::getPieceByIndex(const int index) const
 Piece* Board::getPieceByPlace(const std::string place) const
 {
 	return this->_pieces[calcIndexByPlace(place)];
+}
+
+Piece* Board::getPieceByTypeAndIsWhite(const std::string type, const bool isWhite) const
+{
+	int i = 0;
+	Piece* piece = nullptr;
+
+	for (i = 0; i < CHESS_BOARD_SIZE; i++)
+	{
+		piece = this->_pieces[i];
+		if (piece->getPieceType() == type && piece->getIsWhite() == isWhite)
+		{
+			return piece;
+		}
+	}
+	return nullptr;
 }
 
 
