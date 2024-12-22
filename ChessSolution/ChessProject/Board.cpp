@@ -205,3 +205,12 @@ int Board::calcIndexByPlace(const std::string place)
 
 	return index;
 }
+
+bool Piece::checkIfPiecesBetweenStrightLine(const std::string src, const std::string dst)
+{
+	int i = 0; 
+	
+	for (i = 0; i < CHESS_BOARD_SIZE; i++)
+	{
+		if ()
+}

@@ -31,3 +31,4 @@ int Piece::getColoumnMovement(const std::string src, const std::string dst)
 {
 	return std::abs(src[1] - dst[1]);
 }
+
