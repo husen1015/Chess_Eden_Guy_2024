@@ -48,5 +48,4 @@ public:
 
 private:
 	std::string _code;
-	std::vector<Piece*> _pieces;
 };

@@ -22,6 +22,9 @@ public:
 private:
 	//Fields
 	//bool _callPlayer;
+	std::vector<Piece*> _white;
+	std::vector<Piece*> _black;
+	//:(    D:{    ]:(   
 	bool _isWhite;
 	int _turn;
 	Board _board;

@@ -55,18 +55,9 @@ void main1() //PUT 1 TO CREATE A NEW MAIN (REMEMBER TO CHANGE BACK)
 
 	while (msgFromGraphics != "quit")
 	{
-		// should handle the string the sent from graphics
-		// according the protocol. Ex: e2e4           (move e2 to e4)
-		
-		// YOUR CODE
-		strcpy_s(msgToGraphics, "YOUR CODE"); // msgToGraphics should contain the result of the operation
-
-		/******* JUST FOR EREZ DEBUGGING ******/
-		int r = rand() % 10; // just for debugging......
-		msgToGraphics[0] = (char)(1 + '0');
-		msgToGraphics[1] = 0;
-		/******* JUST FOR EREZ DEBUGGING ******/
-
+		//Check if move is valid
+		/////HELP//////
+		strcpy_s(msgToGraphics, "a5b3"); // msgToGraphics should contain the result of the operation
 
 		// return result to graphics		
 		p.sendMessageToGraphics(msgToGraphics);   
