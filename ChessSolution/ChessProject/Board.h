@@ -24,6 +24,9 @@ public:
 	void printBoard() const; // Prints the board code, same thing we send to Frontend
 	void createPieces();
 
+	bool SetBoard(const std::string newBoard); //Set the new board acfter every move
+	void SetPieces(const std::string newBoard); //Set the pieces according to the board
+
 	// Move piece methods
 	bool tryToMove(const std::string moveCode);
 	virtual bool checkMoveIsValid(const std::string moveCode) const;

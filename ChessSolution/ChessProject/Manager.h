@@ -8,19 +8,21 @@
 class Manager
 {
 public:
-	Manager();
+	Manager(const Board board);
 	~Manager();
 
 	//Getters
-	bool GetCallPlayer() const;
+	//bool GetCallPlayer() const;
+	bool GetIsWhite() const;
 	int GetTurn() const;
-	Board* GetBoard() const;
+	//Board* GetBoard() const;
 
 	void processMessageFromGraphics(const std::string msg);
 
 private:
 	//Fields
-	bool _callPlayer;
+	//bool _callPlayer;
+	bool _isWhite;
 	int _turn;
 	Board _board;
 };
