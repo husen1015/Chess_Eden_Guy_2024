@@ -10,7 +10,7 @@ public:
 
 	virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const override;
 
-
+    
     static bool checkRookMovement(const std::string src, const std::string dst);
 	
 };

@@ -28,6 +28,8 @@ public:
 	// Static helper functions
 	static int getRowMovement(const std::string src, const std::string dst);
 	static int getColoumnMovement(const std::string src, const std::string dst);
+
+	static bool checkIfPiecesBetweenStrightLine (const std::string src, const std::string dst);
 	
 protected:
 	bool _isWhite;

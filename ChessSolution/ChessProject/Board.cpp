@@ -7,7 +7,7 @@ Board::Board()
 
 void Board::initNormalBoard()
 {
-	this->_code = "rnbkqbnrpppppppp################################PPPPPPPPRNBKQBNR0";
+	this->_code = "r##############################################################R0";
 	this->createPieces();
 }
 
@@ -19,9 +19,10 @@ void Board::printBoard() const
 
 bool Board::tryToMove(const std::string moveCode)
 {
+
 	if (checkMoveIsValid(moveCode) == true)
 	{
-		//move piece
+		//YO YO BRO? WHAT IS UP
 		return true;
 	}
 	return false;
@@ -42,6 +43,7 @@ bool Board::checkMoveIsValid(const std::string moveCode) const
 
 bool Board::checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const
 {
+	/*
 	int i = 0;
 	Piece* currPlayerKing = getPieceByTypeAndIsWhite("King", isKingWhite);
 	Piece* piece = nullptr;
@@ -55,7 +57,7 @@ bool Board::checkIfMoveRevealsCheck(const bool isKingWhite, const std::string ds
 		}
 		else if (piece
 	}
-	
+	*/
 }
 
 bool Board::checkIfMoveChangesPosition(const std::string src, const std::string dst) const
@@ -204,4 +206,13 @@ int Board::calcIndexByPlace(const std::string place)
 	index = row * CHESS_BOARD_SIZE + coloumn;
 
 	return index;
+}
+
+bool Piece::checkIfPiecesBetweenStrightLine(const std::string src, const std::string dst)
+{
+	int i = 0; 
+	
+	for (i = 0; i < CHESS_BOARD_SIZE; i++)
+	{
+		if ()
 }
