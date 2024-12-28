@@ -14,6 +14,11 @@ bool Bishop::checkIfMoveSuitsPieceAbilites(const std::string dst) const
 	return checkBishopMovement(this->_place, dst);
 }
 
+std::string Bishop::getPieceType() const
+{
+	return "Bishop";
+}
+
 
 bool Bishop::checkBishopMovement(const std::string src, const std::string dst)
 {

@@ -10,7 +10,7 @@ public:
 	~Bishop();
 
 	virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const override;
-
+	virtual std::string getPieceType() const override;
 
 	static bool checkBishopMovement(const std::string src, const std::string dst);
 

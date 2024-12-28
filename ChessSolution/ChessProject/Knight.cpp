@@ -13,6 +13,11 @@ bool Knight::checkIfMoveSuitsPieceAbilites(const std::string dst) const
     return checkKnightMovement(this->_place, dst);
 }
 
+std::string Knight::getPieceType() const
+{
+    return "Knight";
+}
+
 bool Knight::checkKnightMovement(const std::string src, const std::string dst)
 {
     int rowMovement = getRowMovement(src, dst);

@@ -23,7 +23,14 @@ public:
 private:
 	//Fields
 	//bool _callPlayer;
+<<<<<<< HEAD
 	std::string currPlayer;
+=======
+	//std::vector<Piece*> _white;
+	//std::vector<Piece*> _black;
+	//:(    D:{    ]:(   
+	bool _isWhite;
+>>>>>>> 6fa63839aab47969d47f7fa067dade412b7244e5
 	int _turn;
 	Board _board;
 };
