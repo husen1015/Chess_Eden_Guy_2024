@@ -9,10 +9,11 @@ public:
 	~Rook();
 
 	virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const override;
-
+    virtual std::string getPieceType() const override;
     
     static bool checkRookMovement(const std::string src, const std::string dst);
-    static bool checkIfPiecesBetweenRookMovement(const std::string src, const std::string dst);
+    //Check if there are pieces in the squares between src to dst
+    bool checkIfPiecesBetweenRookMovement(const std::string dst, const std::string boardCode);
 	
 };
 

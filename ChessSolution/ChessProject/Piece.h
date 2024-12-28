@@ -29,8 +29,12 @@ public:
 	static int getRowMovement(const std::string src, const std::string dst);
 	static int getColoumnMovement(const std::string src, const std::string dst);
 
-	static bool checkIfPiecesBetweenStrightLine (const std::string src, const std::string dst);
-	
+	//Check if there are pieces in squares between movment
+	bool checkPiecesInStrightMove(const std::string dst, const std::string board) const;
+	bool checkPiecesInDiagonalMove(const std::string dst, const std::string board) const;
+	bool checkPiecesLeftOrRight(const int srcNum, const int dstNum, const std::string board) const;
+	bool checkPiecesUpOrDown(const int srcNum, const int dstNum, const std::string board) const;
+
 protected:
 	bool _isWhite;
 	std::string _place;

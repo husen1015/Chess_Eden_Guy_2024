@@ -14,6 +14,11 @@ bool Pawn::checkIfMoveSuitsPieceAbilites(const std::string dst) const
     return checkPawnMovement(this->_place, dst);
 }
 
+std::string Pawn::getPieceType() const
+{
+    return "Pawn";
+}
+
 bool Pawn::checkPawnMovement(const std::string src, const std::string dst, Pawn* pawn)
 {
     int squares = 1;
