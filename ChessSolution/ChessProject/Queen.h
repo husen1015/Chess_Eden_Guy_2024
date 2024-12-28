@@ -8,8 +8,10 @@ public:
 	Queen(const bool isWhite, const std::string place);
 	~Queen();
 
-	virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const override;
-	static bool checkQueenMovement(const std::string src, const std::string dst);
+	//Getters
+	virtual std::string getPieceType() const override;
 
-	//virtual bool checkMoveIsValid() override;
+	//Check if the movement fits the QUEEN valid movements
+	virtual bool checkMoveValidaty(const std::string moveCode, const std::string boardCode) const override;
+	virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const override;
 };

@@ -9,19 +9,26 @@ Bishop::~Bishop()
 {
 }
 
+std::string Bishop::getPieceType() const
+{
+	return "Bishop";
+}
+
+bool Bishop::checkMoveValidaty(const std::string moveCode, const std::string boardCode) const
+{
+	bool check = true;
+
+	check = this->checkIfMoveSuitsPieceAbilites(moveCode);
+	check = check && this->checkIfMoveHasMovement(moveCode);
+	check = check && this->checkPiecesInDiagonalMove(moveCode, boardCode);
+	//check = check && this->checkEatsOwnPiece(dst);
+	return check;
+}
+
 bool Bishop::checkIfMoveSuitsPieceAbilites(const std::string dst) const
 {
-	return checkBishopMovement(this->_place, dst);
+	int rowMovement = getRowMovement(_place, dst);
+	int columnMovement = getColoumnMovement(_place, dst);
+
+	return rowMovement == columnMovement;
 }
-
-
-bool Bishop::checkBishopMovement(const std::string src, const std::string dst)
-{
-	// EDEN PLS DO THIS
-	int rowDifference = std::abs((src[0] - 'a') - (dst[0] - 'a'));
-	int columnDifference = std::abs((src[1] - '0') - (dst[1] - '0'));
-
-	return rowDifference == columnDifference;
-}
-
-

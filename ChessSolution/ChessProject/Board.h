@@ -19,32 +19,32 @@ class Board
 {
 public:
 	Board();
+	~Board();
 
 	void initNormalBoard(); // Initializes a normal chess board at the start of the game
 	void printBoard() const; // Prints the board code, same thing we send to Frontend
 	void createPieces();
 
+	std::string getCode();
+	bool SetBoard(const std::string newBoard); //Set the new board acfter every move
+
 	// Move piece methods
 	bool tryToMove(const std::string moveCode);
-	virtual bool checkMoveIsValid(const std::string moveCode) const;
-	bool checkIfEatsOwnPiece(Piece* piece, const std::string dst) const;
-	bool checkIfMoveRevealsCheck(const std::string dst) const;
-	bool checkIfMoveChangesPosition(const std::string src, const std::string dst) const;
 
-
+	//Getters
 	// Helper methods
-	Piece* getPieceByIndex(const int index) const;
-	Piece* getPieceByPlace(const std::string place) const;
-
+	char getPieceByIndex(const int index) const;
+	char getPieceByPlace(const std::string place) const;
+	Piece* getPieceByTypeAndIsWhite(const std::string type, const bool isWhite) const;
 
 	// Helper static functions
-	static std::string calcPlaceByIndex(const int index);
-	static int calcIndexByPlace(const std::string place);
+	static std::string getPlaceByIndex(const int index);
+	static int getIndexByPlace(const std::string place);
 
-
-	void tryToMove(const std::string moveCode);
+	static char getPieceByIndex(std::string boardCode, const int index);
+	static char getPieceByPlace(const std::string boardCode, const std::string place);
 
 private:
-	std::string _code;
-	std::vector<Piece*> _pieces;
+	std::string _board;
 };
+

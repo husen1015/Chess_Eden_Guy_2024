@@ -8,20 +8,27 @@ Knight::~Knight()
 {
 }
 
+std::string Knight::getPieceType() const
+{
+	return "Knight";
+}
+
+bool Knight::checkMoveValidaty(const std::string moveCode, const std::string boardCode) const
+{
+	bool check = true;
+
+	check = this->checkIfMoveSuitsPieceAbilites(moveCode);
+	check = check && this->checkIfMoveHasMovement(moveCode);
+	check = check && this->checkPiecesInDiagonalMove(moveCode, boardCode);
+	//check = check && this->checkEatsOwnPiece(dst);
+	return check;
+}
+
 bool Knight::checkIfMoveSuitsPieceAbilites(const std::string dst) const
 {
-    return checkKnightMovement(this->_place, dst);
+	int rowMovement = getRowMovement(_place, dst);
+	int columnMovement = getColumnMovement(_place, dst);
+
+	return (rowMovement == 2 && columnMovement == 1) || (rowMovement == 1 && columnMovement == 2);
+
 }
-
-bool Knight::checkKnightMovement(const std::string src, const std::string dst)
-{
-    bool rowDifference = std::abs((src[0] - 'a') - (dst[0] - 'a')) == 2 && std::abs((src[1] - '0') - (dst[1] - '0')) == 1;
-    bool columnDifference = std::abs((src[0] - 'a') - (dst[0] - 'a')) == 1 && std::abs((src[1] - '0') - (dst[1] - '0')) == 2;
-
-    return rowDifference || columnDifference;
-}
-
-/*bool Knight::checkMoveIsValid()
-{
-    return false;
-}*/

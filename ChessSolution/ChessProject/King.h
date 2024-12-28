@@ -8,8 +8,8 @@ public:
 	King(const bool isWhite, const std::string place);
 	~King();
 
-	virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const override;
-	static bool checkKingMovement(const std::string src, const std::string dst);
+	virtual std::string getPieceType() const override;
 
-	//virtual bool checkMoveIsValid(const std::string newPlace) override;
+	virtual bool checkMoveValidaty(const std::string moveCode, const std::string boardCode) const override;
+	virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const override;
 };

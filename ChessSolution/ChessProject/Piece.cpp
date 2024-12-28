@@ -7,7 +7,6 @@ Piece::Piece(const bool isWhite, const std::string place):
 
 Piece::~Piece()
 {
-
 }
 
 bool Piece::getIsWhite() const
@@ -20,7 +19,105 @@ void Piece::setIsWhite(bool isWhite)
 	_isWhite = isWhite;
 }
 
-bool Piece::checkIfEatsOwnPiece(std::string moveCode)
+
+// CHECKING MOVE VALIDATY FUNCTIONS
+
+/*bool Piece::checkMoveValidaty(const std::string moveCode, const std::string boardCode)
+{
+	std::string src = moveCode.substr(0, 2);
+	std::string dst = moveCode.substr(2, 2);
+	char piece = Board::getPieceByPlace(src);
+
+	return
+		checkIfEatsOwnPiece(piece, dst) &&
+		piece->checkIfMoveSuitsPieceAbilites(dst) &&
+		checkIfMoveRevealsCheck(piece->getIsWhite(), dst);
+}*/
+
+bool Piece::checkIfMoveHasMovement(const std::string src, const std::string dst)
+{
+	return src != dst;
+}
+
+bool Piece::checkIfEatsOwnPiece(const std::string dst, const std::string boardCode)
+{
+    char pieceInDst = Board::getPieceByPlace(boardCode, dst)
+	if (pieceInDst != '#')
+	{
+		return false; // There is no piece in dst
+	}
+    if(pieceInDst == )
+	return  this->getIsWhite()::getPieceColor(pieceInDst)// There is a piece in dst, now we need to check if it is the same color
+	
+}
+
+
+// Static helper functions
+
+int Piece::getRowMovement(const std::string src, const std::string dst)
+{
+	return std::abs(src[0] - dst[0]);
+}
+
+int Piece::getColumnMovement(const std::string src, const std::string dst)
+{
+	return std::abs(src[1] - dst[1]);
+}
+
+bool Piece::checkPiecesInStrightMove(const std::string dst, const std::string board) const
+{
+    int i = 0, j = 0, srcNum = 0, dstNum = 0;
+    bool directaion = _place[0] == dst[0];
+    srcNum = ((_place[0] - '0' - 1) * 8 + (_place[1] - 'a' - 97)); //Get src index
+    dstNum = ((dst[0] - '0' - 1) * 8 + (dst[1] - 'a' - 97)); //Get dst index
+    
+    if (directaion) //Going left or right
+    {
+        return checkPiecesLeftOrRight(srcNum, dstNum, board);
+    }
+    return checkPiecesUpOrDown(srcNum, dstNum, board);
+}
+
+bool Piece::checkPiecesInDiagonalMove(const std::string dst, const std::string board) const
 {
 	return false;
 }
+
+bool Piece::checkPiecesLeftOrRight(const int srcNum, const int dstNum, const std::string board) const
+{
+    int firstIndex = srcNum, lastIndex = dstNum; //Moving right on the board
+
+    if (dstNum < srcNum) // Moving left on the board
+    {
+        firstIndex = dstNum;
+        lastIndex = srcNum;
+    }
+    for (; firstIndex <= lastIndex; firstIndex++) //Go over all the squares between src to dst
+    {
+        if (board[firstIndex] != '#') //If there is a piece in square
+        {
+            return false; //Move is invalid
+        }
+    }
+    return true; //Move is valid
+}
+
+bool Piece::checkPiecesUpOrDown(const int srcNum, const int dstNum, const std::string board) const
+{
+    int firstIndex = srcNum, lastIndex = dstNum; //Moving down on the board
+
+    if (dstNum < srcNum) // Moving up on the board
+    {
+        firstIndex = dstNum;
+        lastIndex = srcNum;
+    }
+    for (; firstIndex <= lastIndex; firstIndex += 8) //Go over all the squares between src to dst
+    {
+        if (board[firstIndex] != '#') //If there is a piece in square
+        {
+            return false; //Move is invalid
+        }
+    }
+    return true; //Move is valid
+}
+

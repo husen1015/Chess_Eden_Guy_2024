@@ -2,148 +2,82 @@
 
 Board::Board()
 {
-	this->_code = "################################################################0"; // Empty board, white player starts
+	this->_board = "################################################################0"; // Empty board, white player starts
 }
 
 void Board::initNormalBoard()
 {
-	this->_code = "rnbkqbnrpppppppp################################PPPPPPPPRNBKQBNR0";
-	this->createPieces();
+	this->_board = "r##############################################################R0";
 }
 
 void Board::printBoard() const
 {
-	std::cout << "The board code (as we send to frontend): " << this->_code << std::endl;
+	std::cout << "The board code (as we send to frontend): " << this->_board << std::endl;
 }
 
 
+
+std::string Board::getCode()
+{
+	return this->_board;
+}
+
+bool Board::SetBoard(const std::string newBoard)
+{
+	if (tryToMove(newBoard))
+	{
+        _board = newBoard;
+		//Change pieces
+		std::cout << "ALL GOOD! - SetBoard" << std::endl;
+		return true;
+	}
+	
+	std::cout << "NOPE. - SetBoard" << std::endl;
+	return false;
+}
+
 bool Board::tryToMove(const std::string moveCode)
 {
+
 	if (checkMoveIsValid(moveCode) == true)
 	{
-		//move piece
+		//YO YO BRO? WHAT IS UP
 		return true;
 	}
 	return false;
 }
 
-bool Board::checkIfMoveRevealsCheck(const std::string dst) const
-{
-	
-}
-
-bool Board::checkIfMoveChangesPosition(const std::string src, const std::string dst) const
-{
-	return src == dst;
-}
-
-bool Board::checkIfEatsOwnPiece(Piece* piece, const std::string dst) const
-{
-	
-	if (getPieceByPlace(dst) != nullptr)
-	{
-		return false; // There is no piece in dst
-	}
-	return getPieceByPlace(dst)->getIsWhite() == piece->getIsWhite(); // There is a piece in dst, now we need to check if it is the same color
-}
-
-
-bool Board::checkMoveIsValid(const std::string moveCode) const
-{
-	
-	std::string src = moveCode.substr(0, 2);
-	std::string dst = moveCode.substr(2, 2);
-	Piece* piece = this->getPieceByPlace(src);
-
-	return checkIfEatsOwnPiece(piece, dst) &&
-		checkIfMoveRevealsCheck(dst) &&
-		piece->checkIfMoveSuitsPieceAbilites(dst);
-}
 
 
 
-void Board::createPieces()
-{
-	int i = 0;
-	std::string place = "";
-
-	for (i = 0; i < CHESS_BOARD_SIZE; i++)
-	{
-		place = calcPlaceByIndex(i);
-
-		switch (this->_code[i])
-		{
-		// BLACK PIECES
-		case 'r':
-			Rook* newRook = new Rook(false, place);
-			this->_pieces.push_back(newRook);
-			break;
-
-		case 'n':
-			Knight * newKnight = new Knight(false, place);
-			this->_pieces.push_back(newKnight);
-			break;
-
-		case 'b':
-			Bishop * newBishop = new Bishop(false, place);
-			this->_pieces.push_back(newBishop);
-			break;
-
-		case 'q':
-			Queen * newQueen = new Queen(false, place);
-			this->_pieces.push_back(newQueen);
-			break;
-		
-		case 'k':
-			King * newKing = new King(false, place);
-			this->_pieces.push_back(newKing);
-			break;
-
-		// WHITE PIECES
-		case 'R':
-			Rook * newRook = new Rook(false, place);
-			this->_pieces.push_back(newRook);
-			break;
-
-		case 'N':
-			Knight * newRook = new Knight(false, place);
-			this->_pieces.push_back(newKnight);
-			break;
-
-		case 'B':
-			Bishop * newRook = new Bishop(false, place);
-			this->_pieces.push_back(newBishop);
-			break;
-
-		case 'Q':
-			Queen * newRook = new Queen(false, place);
-			this->_pieces.push_back(newQueen);
-			break;
-
-		case 'K':
-			King * newRook = new King(false, place);
-			this->_pieces.push_back(newKing);
-			break;
-
-		case '#':
-			this->_pieces.push_back(nullptr);
-		default:
-			std::cerr << "Error at Board::createPieces - invalid board code" << std::endl;
-		}
-	}
-}
 
 
 // Helper methods
 
-Piece* Board::getPieceByIndex(const int index) const
+char Board::getPieceByIndex(const int index) const
 {
-	return this->_pieces[index];
+	return this->_board[index];
 }
 
-Piece* Board::getPieceByPlace(const std::string place) const
+char Board::getPieceByPlace(const std::string place) const
 {
-	return this->_pieces[calcIndexByPlace(place)];
+	return this->_board[calcIndexByPlace(place)];
+}
+
+Piece* Board::getPieceByTypeAndIsWhite(const std::string type, const bool isWhite) const
+{
+	int i = 0;
+	Piece* piece = nullptr;
+
+	for (i = 0; i < CHESS_BOARD_SIZE; i++)
+	{
+		piece = this->_board[i];
+		if (piece->getPieceType() == type && piece->getIsWhite() == isWhite)
+		{
+			return piece;
+		}
+	}
+	return nullptr;
 }
 
 
@@ -173,4 +107,14 @@ int Board::calcIndexByPlace(const std::string place)
 	index = row * CHESS_BOARD_SIZE + coloumn;
 
 	return index;
+}
+
+char Board::getPieceByIndex(std::string boardCode, const int index)
+{
+	return boardCode[index];
+}
+
+char Board::getPieceByPlace(const std::string boardCode, const std::string place)
+{
+	return boardCode[calcIndexByPlace(place)];
 }
