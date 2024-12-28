@@ -11,6 +11,29 @@ Manager::~Manager()
 {
 }
 
+void Manager::newGame(Pipe& p)
+{
+	char msgToGraphics[1024];
+	Board gameBoard;
+
+	gameBoard.initNormalBoard();
+	strcpy_s(msgToGraphics, gameBoard.getCode());
+	p.sendMessageToGraphics(msgToGraphics);   // send the board string
+
+	std::string msgFromGraphics = p.getMessageFromGraphics();
+
+	while (msgFromGraphics != "quit")
+	{
+		strcpy_s(msgToGraphics, Manager::processMessageFromGraphics(msgFromGraphics)); // msgToGraphics should contain the result of the operation
+
+		// return result to graphics		
+		p.sendMessageToGraphics(msgToGraphics);
+
+		// get message from graphics
+		msgFromGraphics = p.getMessageFromGraphics();
+	}
+}
+
 bool Manager::GetIsWhite() const
 {
 	return _isWhite;
@@ -22,7 +45,7 @@ int Manager::GetTurn() const
 }
 
 
-void Manager::processMessageFromGraphics(const std::string msg)
+std::string Manager::processMessageFromGraphics(const std::string msg)
 {
 
 	while (!_board.SetBoard(msg))

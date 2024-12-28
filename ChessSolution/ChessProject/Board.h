@@ -24,27 +24,24 @@ public:
 	void printBoard() const; // Prints the board code, same thing we send to Frontend
 	void createPieces();
 
+	std::string getCode();
 	bool SetBoard(const std::string newBoard); //Set the new board acfter every move
-	void SetPieces(const std::string newBoard); //Set the pieces according to the board
 
 	// Move piece methods
 	bool tryToMove(const std::string moveCode);
-	virtual bool checkMoveIsValid(const std::string moveCode) const;
-	bool checkIfEatsOwnPiece(Piece* piece, const std::string dst) const;
-	bool checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const;
-	bool checkIfMoveChangesPosition(const std::string src, const std::string dst) const;
 
 
 	// Helper methods
-	Piece* getPieceByIndex(const int index) const;
-	Piece* getPieceByPlace(const std::string place) const;
+	char getPieceByIndex(const int index) const;
+	char getPieceByPlace(const std::string place) const;
 	Piece* getPieceByTypeAndIsWhite(const std::string type, const bool isWhite) const;
 
 	// Helper static functions
 	static std::string calcPlaceByIndex(const int index);
 	static int calcIndexByPlace(const std::string place);
 
-
+	static char getPieceByIndex(std::string boardCode, const int index);
+	static char getPieceByPlace(const std::string boardCode, const std::string place);
 
 private:
 	std::string _code;

@@ -7,6 +7,7 @@ in order to read and write information from and to the Backend
 #include "Pipe.h"
 #include <iostream>
 #include <thread>
+#include "Manager.h"
 
 using std::cout;
 using std::endl;
@@ -41,30 +42,8 @@ void main1() //PUT 1 TO CREATE A NEW MAIN (REMEMBER TO CHANGE BACK)
 		}
 	}
 	
-
-	char msgToGraphics[1024];
-	// msgToGraphics should contain the board string accord the protocol
-	// YOUR CODE
-
-	strcpy_s(msgToGraphics, "rnbkqbnrpppppppp################################PPPPPPPPRNBKQBNR1"); // just example...
-	
-	p.sendMessageToGraphics(msgToGraphics);   // send the board string
-
-	// get message from graphics
-	string msgFromGraphics = p.getMessageFromGraphics();
-
-	while (msgFromGraphics != "quit")
-	{
-		//Check if move is valid
-		/////HELP//////
-		strcpy_s(msgToGraphics, "a5b3"); // msgToGraphics should contain the result of the operation
-
-		// return result to graphics		
-		p.sendMessageToGraphics(msgToGraphics);   
-
-		// get message from graphics
-		msgFromGraphics = p.getMessageFromGraphics();
-	}
+	Manager gameManager;
+	gameManager.newGame(p);
 
 	p.close();
 }
