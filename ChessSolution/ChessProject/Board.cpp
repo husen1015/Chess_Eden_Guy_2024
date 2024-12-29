@@ -9,6 +9,7 @@ Board::~Board()
 {
 }
 
+
 void Board::initNormalBoard()
 {
 	this->_board = "r##############################################################R0";
@@ -19,7 +20,22 @@ void Board::printBoard() const
 	std::cout << "The board code (as we send to frontend): " << this->_board << std::endl;
 }
 
+Piece* Board::createPieceByType(char pieceType, std::string place)
+{
+	switch (pieceType)
+	{
 
+		// BLACK PIECES (isWhite = false)
+	case 'r':
+		return new Rook(false, place);
+		// WHITE PIECES (isWhite = true)
+	case 'R':
+		return new Rook(true, place);
+	default:
+		std::cout << "Error in createPieceByType" << std::endl;
+	}
+	return nullptr;
+}
 
 std::string Board::getCode()
 {
@@ -46,10 +62,12 @@ bool Board::tryToMove(const std::string moveCode)
 	std::string dst = moveCode.substr(2, 2);
 
 	char movingPieceType = this->getPieceByPlace(src);
-	Piece* piece = Piece::createPieceByType(movingPieceType, src);
+	Piece* piece = createPieceByType(movingPieceType, src);
 
 	if (piece->checkMoveValidaty(dst, this->getCode()))
 	{
+		int dstIndex = getIndexByPlace(dst);
+		int srcIndex = getIndexByPlace(src);
 		this->_board[getIndexByPlace(dst)] = this->_board[getIndexByPlace(src)]; // Moving the piece in the boardCode to the destination
 		this->_board[getIndexByPlace(src)] = '#'; // Removing the piece now that it is in its new location
 		return true;
@@ -81,26 +99,26 @@ char Board::getPieceByPlace(const std::string place) const
 
 std::string Board::getPlaceByIndex(const int index)
 {
-	std::string coloumn = "";
+	std::string column = "";
 	std::string row = "";
 	std::string place = "";
 
-	coloumn = index % CHESS_BOARD_SIZE + 'a';
-	row = '8' - (index / CHESS_BOARD_SIZE);
-	place = coloumn + row;
+	column = index % CHESS_BOARD_SIDE + 'a';
+	row = '8' - (index / CHESS_BOARD_SIDE);
+	place = column + row;
 
 	return place;
 }
 
 int Board::getIndexByPlace(const std::string place)
 {
-	int coloumn = 0;
+	int column = 0;
 	int row = 0;
 	int index = 0;
 
-	coloumn = place.at(0) - 'a';
-	row = place.at(1) - '8';
-	index = row * CHESS_BOARD_SIZE + coloumn;
+	column = place[0] - 'a';
+	row = '8' - place[1];
+	index = row * CHESS_BOARD_SIDE + column;
 
 	return index;
 }

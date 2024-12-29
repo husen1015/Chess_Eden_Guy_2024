@@ -1,9 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include "cmath"
-
-#include "Board.h"
+#include <cmath>
 
 class Board;
 
@@ -12,9 +10,9 @@ class Piece
 
 public:
 	Piece(const bool isWhite, const std::string place);
-	~Piece();
+	virtual ~Piece();
 
-	static Piece* createPieceByType(char pieceType, std::string place);
+	
 
 	//Getters
 	bool getIsWhite() const;
@@ -23,14 +21,13 @@ public:
 	//Setters
 	void setIsWhite(bool isWhite);
 
-	virtual bool checkMoveValidaty(const std::string dst, const std::string boardCode) const;
+	virtual bool checkMoveValidaty(const std::string dst, const std::string boardCode) const = 0;
 	bool checkIfMoveHasMovement(const std::string dst) const;
 	bool checkIfEatsOwnPiece(const std::string dst, const std::string boardCode) const;
 	bool checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const;
 
 
 	// Virtual methods
-
 	// Static helper functions
 	static int getColumnMovement(const std::string src, const std::string dst);
 	static int getRowMovement(const std::string src, const std::string dst);

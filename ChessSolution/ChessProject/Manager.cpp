@@ -2,20 +2,23 @@
 
 Manager::Manager()
 {
+	this->_isPlayerWhite = true;
+	this->_turn = 0;
+	this->_board = Board();
 }
 
 Manager::~Manager()
 {
 }
 
+
 void Manager::newGame(Pipe& p)
 {
 	char msgToGraphics[1024];
-	Board gameBoard;
 
-	gameBoard.initNormalBoard();
+	this->_board.initNormalBoard();
 
-	strcpy_s(msgToGraphics, gameBoard.getCode().c_str()); // We the c_str() method to convert std::string to char[] so we can copy it using strcpy_s
+	strcpy_s(msgToGraphics, this->_board.getCode().c_str()); // We the c_str() method to convert std::string to char[] so we can copy it using strcpy_s
 	p.sendMessageToGraphics(msgToGraphics); // send the board string
 
 	std::string msgFromGraphics = p.getMessageFromGraphics().c_str();
@@ -51,11 +54,11 @@ std::string Manager::processMessageFromGraphics(const std::string msg)
 		this->_isPlayerWhite = !this->_isPlayerWhite; // Change current player color
 		this->_turn++; //Add to number of turns
 		std::cout << "The move IS VALID. I think." << std::endl;
-		return msg;
+		return "0";
 	}
 	else
 	{
 		std::cout << "The move IS NOT VALID. I think (:" << std::endl;
-		return "Not a valid move";
+		return "1";
 	}
 }

@@ -14,7 +14,7 @@ using std::endl;
 using std::string;
 
 
-void main1() //PUT 1 TO CREATE A NEW MAIN (REMEMBER TO CHANGE BACK)
+void main() //PUT 1 TO CREATE A NEW MAIN (REMEMBER TO CHANGE BACK)
 {
 	srand(time_t(NULL));
 

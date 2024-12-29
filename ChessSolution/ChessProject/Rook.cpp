@@ -23,3 +23,4 @@ bool Rook::checkMoveValidaty(const std::string dst, const std::string boardCode)
 	*/
 	return check;
 }
+
