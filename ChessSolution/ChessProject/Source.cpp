@@ -42,7 +42,7 @@ void main1() //PUT 1 TO CREATE A NEW MAIN (REMEMBER TO CHANGE BACK)
 		}
 	}
 	
-	Manager* gameManager = new Manager();
+	Manager gameManager;
 	gameManager.newGame(p);
 
 	p.close();
