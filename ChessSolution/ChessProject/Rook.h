@@ -1,17 +1,21 @@
 #pragma once
 #include "Piece.h"
 
+
 class Rook : public Piece
 {
 public:
 
 	Rook(const bool isWhite, const std::string place);
+<<<<<<< HEAD
 	virtual ~Rook() = default;
+=======
+	virtual ~Rook();
+>>>>>>> 49f4ad216855c62d4e45a59bb6996ee5bf9e8246
 
     //Getters
 
-    virtual bool checkMoveValidaty(const std::string dst, const std::string boardCode) const override;
-
+    bool checkMoveValidaty(const std::string dst, const std::string boardCode) const override;
 };
 
 /*

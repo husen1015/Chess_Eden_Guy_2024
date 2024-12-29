@@ -1,4 +1,5 @@
 #include "Piece.h"
+#include "Board.h"
 
 
 Piece::Piece(const bool isWhite, const std::string place):
@@ -7,6 +8,11 @@ Piece::Piece(const bool isWhite, const std::string place):
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 49f4ad216855c62d4e45a59bb6996ee5bf9e8246
 
 bool Piece::getIsWhite() const
 {
@@ -22,10 +28,14 @@ void Piece::setIsWhite(bool isWhite)
 // CHECKING MOVE VALIDATY FUNCTIONS
 
 
+<<<<<<< HEAD
 /*bool Piece::checkMoveValidaty(const std::string dst, const std::string boardCode) const
 {
     return true;
 }*/
+=======
+
+>>>>>>> 49f4ad216855c62d4e45a59bb6996ee5bf9e8246
 
 bool Piece::checkIfMoveHasMovement(const std::string dst) const
 {
@@ -53,6 +63,7 @@ bool Piece::checkIfMoveRevealsCheck(const bool isKingWhite, const std::string ds
 
 
 // Static helper functions
+
 
 int Piece::getColumnMovement(const std::string src, const std::string dst)
 {

@@ -1,9 +1,13 @@
 #pragma once
 
 #include <iostream>
+<<<<<<< HEAD
 #include "cmath"
 //#include "Rook.h"
 #include "Board.h"
+=======
+#include <cmath>
+>>>>>>> 49f4ad216855c62d4e45a59bb6996ee5bf9e8246
 
 class Board;
 
@@ -12,8 +16,14 @@ class Piece
 
 public:
 	Piece(const bool isWhite, const std::string place);
+<<<<<<< HEAD
 	virtual ~Piece() = default;
 
+=======
+	virtual ~Piece();
+
+	
+>>>>>>> 49f4ad216855c62d4e45a59bb6996ee5bf9e8246
 
 	//Getters
 	bool getIsWhite() const;
@@ -29,7 +39,6 @@ public:
 
 
 	// Virtual methods
-
 	// Static helper functions
 	static int getColumnMovement(const std::string src, const std::string dst);
 	static int getRowMovement(const std::string src, const std::string dst);

@@ -5,13 +5,13 @@
 
 #include "Piece.h"
 #include "Rook.h"
-/*
+
 #include "Knight.h"
 #include "Bishop.h"
 #include "Queen.h"
 #include "King.h"
 #include "Pawn.h"
-*/
+
 
 #define CHESS_BOARD_SIDE 8
 #define CHESS_BOARD_SIZE CHESS_BOARD_SIDE * CHESS_BOARD_SIDE
@@ -27,6 +27,8 @@ public:
 	
 	void initNormalBoard(); // Initializes a normal chess board at the start of the game
 	void printBoard() const; // Prints the board code, same thing we send to Frontend
+
+	static Piece* createPieceByType(char pieceType, std::string place);
 
 	std::string getCode();
 	bool SetBoard(const std::string newBoard); //Set the new board acfter every move
