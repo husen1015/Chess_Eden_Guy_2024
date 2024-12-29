@@ -6,11 +6,11 @@ class Rook : public Piece
 public:
 
 	Rook(const bool isWhite, const std::string place);
-	~Rook();
+	virtual ~Rook() = default;
 
     //Getters
 
-    virtual bool checkMoveValidaty(const std::string dst, const std::string boardCode) const override;
+    bool checkMoveValidaty(const std::string dst, const std::string boardCode) const override;
 
 };
 

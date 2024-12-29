@@ -5,11 +5,6 @@ Rook::Rook(const bool isWhite, const std::string place) :
 {
 }
 
-Rook::~Rook()
-{
-}
-
-
 bool Rook::checkMoveValidaty(const std::string dst, const std::string boardCode) const
 {
 	bool check = true;

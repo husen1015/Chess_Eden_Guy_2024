@@ -1,11 +1,8 @@
 #include "Piece.h"
 
+
 Piece::Piece(const bool isWhite, const std::string place):
 	 _place(place), _isWhite(isWhite)
-{
-}
-
-Piece::~Piece()
 {
 }
 
@@ -41,10 +38,10 @@ void Piece::setIsWhite(bool isWhite)
 // CHECKING MOVE VALIDATY FUNCTIONS
 
 
-bool Piece::checkMoveValidaty(const std::string dst, const std::string boardCode) const
+/*bool Piece::checkMoveValidaty(const std::string dst, const std::string boardCode) const
 {
     return true;
-}
+}*/
 
 bool Piece::checkIfMoveHasMovement(const std::string dst) const
 {

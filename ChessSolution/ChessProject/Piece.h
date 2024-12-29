@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include "cmath"
-
+#include "Rook.h"
 #include "Board.h"
 
 class Board;
@@ -12,7 +12,7 @@ class Piece
 
 public:
 	Piece(const bool isWhite, const std::string place);
-	~Piece();
+	virtual ~Piece() = default;
 
 	static Piece* createPieceByType(char pieceType, std::string place);
 
@@ -23,7 +23,7 @@ public:
 	//Setters
 	void setIsWhite(bool isWhite);
 
-	virtual bool checkMoveValidaty(const std::string dst, const std::string boardCode) const;
+	virtual bool checkMoveValidaty(const std::string dst, const std::string boardCode) const = 0;
 	bool checkIfMoveHasMovement(const std::string dst) const;
 	bool checkIfEatsOwnPiece(const std::string dst, const std::string boardCode) const;
 	bool checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const;
