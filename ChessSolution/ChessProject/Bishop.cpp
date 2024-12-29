@@ -28,7 +28,7 @@ bool Bishop::checkMoveValidaty(const std::string moveCode, const std::string boa
 bool Bishop::checkIfMoveSuitsPieceAbilites(const std::string dst) const
 {
 	int rowMovement = getRowMovement(_place, dst);
-	int columnMovement = getColoumnMovement(_place, dst);
+	int columnMovement = getColumnMovement(_place, dst);
 
 	return rowMovement == columnMovement;
 }

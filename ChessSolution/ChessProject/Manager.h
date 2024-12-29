@@ -8,7 +8,7 @@
 class Manager
 {
 public:
-	Manager(const Board board);
+	Manager();
 	~Manager();
 
 	void newGame(Pipe& p);

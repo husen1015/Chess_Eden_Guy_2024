@@ -1,10 +1,7 @@
 #include "Manager.h"
 
-Manager::Manager(const Board board)
+Manager::Manager()
 {
-	_isWhite = true;
-	_turn = 0;
-	_board = board;
 }
 
 Manager::~Manager()
@@ -17,42 +14,48 @@ void Manager::newGame(Pipe& p)
 	Board gameBoard;
 
 	gameBoard.initNormalBoard();
-	strcpy_s(msgToGraphics, gameBoard.getCode());
-	p.sendMessageToGraphics(msgToGraphics);   // send the board string
 
-	std::string msgFromGraphics = p.getMessageFromGraphics();
+	strcpy_s(msgToGraphics, gameBoard.getCode().c_str()); // We the c_str() method to convert std::string to char[] so we can copy it using strcpy_s
+	p.sendMessageToGraphics(msgToGraphics); // send the board string
+
+	std::string msgFromGraphics = p.getMessageFromGraphics().c_str();
 
 	while (msgFromGraphics != "quit")
 	{
-		strcpy_s(msgToGraphics, Manager::processMessageFromGraphics(msgFromGraphics)); // msgToGraphics should contain the result of the operation
+		strcpy_s(msgToGraphics, this->processMessageFromGraphics(msgFromGraphics).c_str()); // msgToGraphics should contain the result of the operation
 
 		// return result to graphics		
 		p.sendMessageToGraphics(msgToGraphics);
 
-		// get message from graphics
 		msgFromGraphics = p.getMessageFromGraphics();
 	}
 }
 
 bool Manager::GetIsWhite() const
 {
-	return _isWhite;
+	return this->_isPlayerWhite;
 }
 
 int Manager::GetTurn() const
 {
-	return _turn;
+	return this->_turn;
 }
 
 
 std::string Manager::processMessageFromGraphics(const std::string msg)
 {
-
-	while (!_board.SetBoard(msg))
+	bool success = this->_board.tryToMove(msg); // Sending the move code (msg) to try to move the pieces accordingly
+	
+	if (success)
 	{
-		std::cout << "The move isn't valid. I think." << std::endl;
+		this->_isPlayerWhite = !this->_isPlayerWhite; // Change current player color
+		this->_turn++; //Add to number of turns
+		std::cout << "The move IS VALID. I think." << std::endl;
+		return msg;
 	}
-	_isWhite = !_isWhite; //Change player
-	_turn++; //Add to number of turns
-	std::cout << "The move IS VALID. I think." << std::endl;
+	else
+	{
+		std::cout << "The move IS NOT VALID. I think (:" << std::endl;
+		return "Not a valid move";
+	}
 }
