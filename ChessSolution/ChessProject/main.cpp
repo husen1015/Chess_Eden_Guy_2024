@@ -1,4 +1,4 @@
-#include "Manager.h"
+/*#include "Manager.h"
 
 int main()
 {
@@ -6,3 +6,4 @@ int main()
 	Manager* manager = new Manager(board);
 	return 0;
 }
+*/

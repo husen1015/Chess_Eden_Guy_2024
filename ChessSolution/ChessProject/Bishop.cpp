@@ -1,5 +1,5 @@
 #include "Bishop.h"
-
+/*
 Bishop::Bishop(const bool isWhite, const std::string place) :
 	Piece(isWhite, place)
 {
@@ -31,4 +31,4 @@ bool Bishop::checkIfMoveSuitsPieceAbilites(const std::string dst) const
 	int columnMovement = getColumnMovement(_place, dst);
 
 	return rowMovement == columnMovement;
-}
+}*/

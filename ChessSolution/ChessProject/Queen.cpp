@@ -1,5 +1,6 @@
 #include "Queen.h"
 
+/*
 Queen::Queen(const bool isWhite, const std::string place) : Piece(isWhite, place)
 {
 }
@@ -34,3 +35,4 @@ bool Queen::checkIfMoveSuitsPieceAbilites(const std::string dst) const
 
 	return check;
 }
+*/

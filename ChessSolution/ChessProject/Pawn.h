@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Piece.h"
-
+/*
 class Pawn : public Piece
 {
 public:
@@ -14,9 +14,9 @@ public:
 	void SetFirstMove(const bool firstMove);
 
 	virtual bool checkMoveValidaty(const std::string moveCode, const std::string boardCode) const override;
-	virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const override;
 	void checkFirstMove(const std::string dst, const std::string board);
 
 private:
 	bool _firstMove;
 };
+*/
