@@ -1,4 +1,5 @@
 #include "Board.h"
+#include "Manager.h"
 
 Board::Board()
 {
@@ -46,15 +47,15 @@ bool Board::tryToMove(const std::string moveCode)
 	std::string dst = moveCode.substr(2, 2);
 
 	char movingPieceType = this->getPieceByPlace(src);
-	Piece* piece = Piece::createPieceByType(movingPieceType, src);
+	int index = Manager::createPieceByType(movingPieceType, src, _pieces);
 
-	if (piece->checkMoveValidaty(dst, this->getCode()))
+	if (_pieces[index]->checkMoveValidaty(dst, this->getCode()))
 	{
 		this->_board[getIndexByPlace(dst)] = this->_board[getIndexByPlace(src)]; // Moving the piece in the boardCode to the destination
 		this->_board[getIndexByPlace(src)] = '#'; // Removing the piece now that it is in its new location
 		return true;
 	}
-	delete piece;
+	_pieces.clear();
 
 	return false;
 }

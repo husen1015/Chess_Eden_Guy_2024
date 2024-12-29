@@ -50,5 +50,6 @@ public:
 
 private:
 	std::string _board;
+	std::vector<Piece*> _pieces;
 };
 

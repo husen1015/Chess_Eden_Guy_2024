@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include "cmath"
-#include "Rook.h"
+//#include "Rook.h"
 #include "Board.h"
 
 class Board;
@@ -14,7 +14,6 @@ public:
 	Piece(const bool isWhite, const std::string place);
 	virtual ~Piece() = default;
 
-	static Piece* createPieceByType(char pieceType, std::string place);
 
 	//Getters
 	bool getIsWhite() const;

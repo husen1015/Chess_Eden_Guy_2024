@@ -6,23 +6,7 @@ Piece::Piece(const bool isWhite, const std::string place):
 {
 }
 
-Piece* Piece::createPieceByType(char pieceType, std::string place)
-{
-    switch (pieceType)
-    {
 
-    // BLACK PIECES (isWhite = false)
-    case 'r':
-        return new Rook(false, place);
-    // WHITE PIECES (isWhite = true)
-    case 'R':
-        return new Rook(true, place);
-    default:
-        std::cout << "Error in createPieceByType" << std::endl;
-    }
-
-    return nullptr;
-}
 
 bool Piece::getIsWhite() const
 {

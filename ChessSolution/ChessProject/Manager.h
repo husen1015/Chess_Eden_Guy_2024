@@ -4,6 +4,8 @@
 #include <string.h>
 #include "Board.h"
 #include "Pipe.h"
+#include "Piece.h"
+#include <vector>
 
 class Manager
 {
@@ -19,6 +21,8 @@ public:
 	//Board* GetBoard() const;
 
 	std::string processMessageFromGraphics(const std::string msg);
+
+	static int createPieceByType(char pieceType, std::string place, std::vector<Piece*> pieces);
 
 private:
 	bool _isPlayerWhite;

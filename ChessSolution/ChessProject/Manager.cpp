@@ -1,4 +1,5 @@
 #include "Manager.h"
+#include "Exception.h"
 
 Manager::Manager()
 {
@@ -58,4 +59,30 @@ std::string Manager::processMessageFromGraphics(const std::string msg)
 		std::cout << "The move IS NOT VALID. I think (:" << std::endl;
 		return "Not a valid move";
 	}
+}
+
+int Manager::createPieceByType(char pieceType, std::string place, std::vector<Piece*> pieces)
+{
+	try
+	{
+		switch (pieceType)
+		{
+
+			// BLACK PIECES (isWhite = false)
+		case 'r':
+			pieces.push_back(new Rook(false, place));
+			return pieces.size() - 1;
+			// WHITE PIECES (isWhite = true)
+		case 'R':
+			pieces.push_back(new Rook(true, place));
+			return pieces.size() - 1;
+		default:
+			std::cout << "Error in createPieceByType" << std::endl;
+		}
+	}
+	catch (Exception e)
+	{
+		std::cout << "Manager - createPieceByType: " << e.what();
+	}
+	return -1;
 }

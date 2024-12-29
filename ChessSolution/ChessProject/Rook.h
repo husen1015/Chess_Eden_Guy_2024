@@ -10,7 +10,7 @@ public:
 
     //Getters
 
-    bool checkMoveValidaty(const std::string dst, const std::string boardCode) const override;
+    virtual bool checkMoveValidaty(const std::string dst, const std::string boardCode) const override;
 
 };
 
