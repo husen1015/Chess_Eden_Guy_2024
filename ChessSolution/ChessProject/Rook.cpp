@@ -9,23 +9,17 @@ Rook::~Rook()
 {
 }
 
-std::string Rook::getPieceType() const
-{
-    return "Rook";
-}
 
-bool Rook::checkMoveValidaty(const std::string moveCode, const std::string boardCode) const
+bool Rook::checkMoveValidaty(const std::string dst, const std::string boardCode) const
 {
 	bool check = true;
 
-	check = this->checkIfMoveSuitsPieceAbilites(moveCode);
-	check = check && this->checkIfMoveHasMovement(moveCode);
-	check = check && this->checkPiecesInDiagonalMove(moveCode, boardCode);
+	/* lets make every move valid :D (for testing)
+	check = this->checkIfMoveSuitsPieceAbilites(src, dst);
+	check = check && this->checkIfMoveHasMovement(src, dst);
+	check = check && this->checkPiecesInDiagonalMove(src, dst, boardCode);
 	//check = check && this->checkEatsOwnPiece(dst);
+	_place[0] == dst[0] || _place[1] == dst[1];
+	*/
 	return check;
-}
-
-bool Rook::checkIfMoveSuitsPieceAbilites(const std::string dst) const
-{
-	return _place[0] == dst[0] || _place[1] == dst[1];
 }

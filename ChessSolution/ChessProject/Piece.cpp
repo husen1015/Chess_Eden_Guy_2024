@@ -9,6 +9,24 @@ Piece::~Piece()
 {
 }
 
+Piece* Piece::createPieceByType(char pieceType, std::string place)
+{
+    switch (pieceType)
+    {
+
+    // BLACK PIECES (isWhite = false)
+    case 'r':
+        return new Rook(false, place);
+    // WHITE PIECES (isWhite = true)
+    case 'R':
+        return new Rook(true, place);
+    default:
+        std::cout << "Error in createPieceByType" << std::endl;
+    }
+
+    return nullptr;
+}
+
 bool Piece::getIsWhite() const
 {
 	return _isWhite;
@@ -22,25 +40,20 @@ void Piece::setIsWhite(bool isWhite)
 
 // CHECKING MOVE VALIDATY FUNCTIONS
 
-/*bool Piece::checkMoveValidaty(const std::string moveCode, const std::string boardCode)
-{
-	std::string src = moveCode.substr(0, 2);
-	std::string dst = moveCode.substr(2, 2);
-	char piece = Board::getPieceByPlace(src);
 
-	return
-		checkIfEatsOwnPiece(piece, dst) &&
-		piece->checkIfMoveSuitsPieceAbilites(dst) &&
-		checkIfMoveRevealsCheck(piece->getIsWhite(), dst);
-}*/
-
-bool Piece::checkIfMoveHasMovement(const std::string src, const std::string dst)
+bool Piece::checkMoveValidaty(const std::string dst, const std::string boardCode) const
 {
-	return src != dst;
+    return true;
 }
 
-bool Piece::checkIfEatsOwnPiece(const std::string dst, const std::string boardCode)
+bool Piece::checkIfMoveHasMovement(const std::string dst) const
 {
+	return this->_place != dst;
+}
+
+bool Piece::checkIfEatsOwnPiece(const std::string dst, const std::string boardCode) const
+{
+    /*
     char pieceInDst = Board::getPieceByPlace(boardCode, dst)
 	if (pieceInDst != '#')
 	{
@@ -48,30 +61,41 @@ bool Piece::checkIfEatsOwnPiece(const std::string dst, const std::string boardCo
 	}
     if(pieceInDst == )
 	return  this->getIsWhite()::getPieceColor(pieceInDst)// There is a piece in dst, now we need to check if it is the same color
-	
+	*/
+    return false;
+}
+
+bool Piece::checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const
+{
+    return false;
 }
 
 
 // Static helper functions
 
+int Piece::getColumnMovement(const std::string src, const std::string dst)
+{
+	return std::abs(src[1] - dst[1]);
+}
 int Piece::getRowMovement(const std::string src, const std::string dst)
 {
 	return std::abs(src[0] - dst[0]);
 }
 
-int Piece::getColumnMovement(const std::string src, const std::string dst)
+
+bool Piece::getIsWhite(const char pieceType)
 {
-	return std::abs(src[1] - dst[1]);
+    return pieceType >= 'A' && pieceType <= 'Z'; // White pieces are capital letters
 }
 
 bool Piece::checkPiecesInStrightMove(const std::string dst, const std::string board) const
 {
     int i = 0, j = 0, srcNum = 0, dstNum = 0;
-    bool directaion = _place[0] == dst[0];
+    bool direction = _place[0] == dst[0];
     srcNum = ((_place[0] - '0' - 1) * 8 + (_place[1] - 'a' - 97)); //Get src index
     dstNum = ((dst[0] - '0' - 1) * 8 + (dst[1] - 'a' - 97)); //Get dst index
     
-    if (directaion) //Going left or right
+    if (direction) //Going left or right
     {
         return checkPiecesLeftOrRight(srcNum, dstNum, board);
     }

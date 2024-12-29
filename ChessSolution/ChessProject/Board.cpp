@@ -5,6 +5,10 @@ Board::Board()
 	this->_board = "################################################################0"; // Empty board, white player starts
 }
 
+Board::~Board()
+{
+}
+
 void Board::initNormalBoard()
 {
 	this->_board = "r##############################################################R0";
@@ -38,12 +42,20 @@ bool Board::SetBoard(const std::string newBoard)
 
 bool Board::tryToMove(const std::string moveCode)
 {
+	std::string src = moveCode.substr(0, 2);
+	std::string dst = moveCode.substr(2, 2);
 
-	if (checkMoveIsValid(moveCode) == true)
+	char movingPieceType = this->getPieceByPlace(src);
+	Piece* piece = Piece::createPieceByType(movingPieceType, src);
+
+	if (piece->checkMoveValidaty(dst, this->getCode()))
 	{
-		//YO YO BRO? WHAT IS UP
+		this->_board[getIndexByPlace(dst)] = this->_board[getIndexByPlace(src)]; // Moving the piece in the boardCode to the destination
+		this->_board[getIndexByPlace(src)] = '#'; // Removing the piece now that it is in its new location
 		return true;
 	}
+	delete piece;
+
 	return false;
 }
 
@@ -61,29 +73,13 @@ char Board::getPieceByIndex(const int index) const
 
 char Board::getPieceByPlace(const std::string place) const
 {
-	return this->_board[calcIndexByPlace(place)];
-}
-
-Piece* Board::getPieceByTypeAndIsWhite(const std::string type, const bool isWhite) const
-{
-	int i = 0;
-	Piece* piece = nullptr;
-
-	for (i = 0; i < CHESS_BOARD_SIZE; i++)
-	{
-		piece = this->_board[i];
-		if (piece->getPieceType() == type && piece->getIsWhite() == isWhite)
-		{
-			return piece;
-		}
-	}
-	return nullptr;
+	return this->_board[getIndexByPlace(place)];
 }
 
 
 // Static helper functions
 
-std::string Board::calcPlaceByIndex(const int index)
+std::string Board::getPlaceByIndex(const int index)
 {
 	std::string coloumn = "";
 	std::string row = "";
@@ -96,7 +92,7 @@ std::string Board::calcPlaceByIndex(const int index)
 	return place;
 }
 
-int Board::calcIndexByPlace(const std::string place)
+int Board::getIndexByPlace(const std::string place)
 {
 	int coloumn = 0;
 	int row = 0;
@@ -116,5 +112,5 @@ char Board::getPieceByIndex(std::string boardCode, const int index)
 
 char Board::getPieceByPlace(const std::string boardCode, const std::string place)
 {
-	return boardCode[calcIndexByPlace(place)];
+	return boardCode[getIndexByPlace(place)];
 }

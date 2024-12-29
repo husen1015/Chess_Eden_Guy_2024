@@ -2,6 +2,7 @@
 
 #include "Piece.h"
 
+/*
 class Queen : public Piece
 {
 public:
@@ -13,5 +14,6 @@ public:
 
 	//Check if the movement fits the QUEEN valid movements
 	virtual bool checkMoveValidaty(const std::string moveCode, const std::string boardCode) const override;
-	virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const override;
 };
+
+*/

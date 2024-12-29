@@ -1,5 +1,6 @@
 #include "Pawn.h"
 
+/*
 Pawn::Pawn(const bool isWhite, const std::string place) : Piece(isWhite, place)
 {
     _firstMove = true;
@@ -51,3 +52,4 @@ void Pawn::checkFirstMove(const std::string dst, const std::string board)
 		_firstMove = false;
 	}
 }
+*/

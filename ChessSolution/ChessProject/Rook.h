@@ -9,10 +9,8 @@ public:
 	~Rook();
 
     //Getters
-    virtual std::string getPieceType() const override;
 
-    virtual bool checkMoveValidaty(const std::string moveCode, const std::string boardCode) const override;
-    virtual bool checkIfMoveSuitsPieceAbilites(const std::string dst) const override;
+    virtual bool checkMoveValidaty(const std::string dst, const std::string boardCode) const override;
 
 };
 

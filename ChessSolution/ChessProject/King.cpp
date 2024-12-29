@@ -1,5 +1,5 @@
 #include "King.h"
-
+/*
 King::King(const bool isWhite, const std::string place) :
     Piece(isWhite, place)
 {
@@ -33,3 +33,4 @@ bool King::checkIfMoveSuitsPieceAbilites(const std::string dst) const
 
 	return rowMovement <= 1 && coloumnMovement <= 1;
 }
+*/

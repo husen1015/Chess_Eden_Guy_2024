@@ -1,5 +1,6 @@
 #include "Knight.h"
 
+/*
 Knight::Knight(const bool isWhite, const std::string place) : Piece(isWhite, place)
 {
 }
@@ -31,4 +32,4 @@ bool Knight::checkIfMoveSuitsPieceAbilites(const std::string dst) const
 
 	return (rowMovement == 2 && columnMovement == 1) || (rowMovement == 1 && columnMovement == 2);
 
-}
+}*/
