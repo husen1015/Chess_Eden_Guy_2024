@@ -1,57 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\",
+  "WorkspaceRootPath": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Rook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Rook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Piece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Piece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Piece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\King.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Rook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Rook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\King.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\King.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\King.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\King.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\King.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Knight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Knight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Knight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{265519C4-684D-4FCC-9C08-401C54425D64}|ChessProject\\ChessProject.vcxproj|solutionrelative:ChessProject\\Manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -62,15 +62,15 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Knight.cpp",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Knight.cpp",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Knight.cpp",
               "RelativeDocumentMoniker": "ChessProject\\Knight.cpp",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Knight.cpp",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Knight.cpp",
               "RelativeToolTip": "ChessProject\\Knight.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -80,9 +80,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "King.h",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\King.h",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\King.h",
               "RelativeDocumentMoniker": "ChessProject\\King.h",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\King.h",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\King.h",
               "RelativeToolTip": "ChessProject\\King.h",
               "ViewState": "AgIAAAgAAAAAAAAAAAAUwA4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -92,9 +92,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "King.cpp",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\King.cpp",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\King.cpp",
               "RelativeDocumentMoniker": "ChessProject\\King.cpp",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\King.cpp",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\King.cpp",
               "RelativeToolTip": "ChessProject\\King.cpp",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -102,11 +102,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Source.cpp",
               "RelativeDocumentMoniker": "ChessProject\\Source.cpp",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Source.cpp",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Source.cpp",
               "RelativeToolTip": "ChessProject\\Source.cpp",
               "ViewState": "AgIAAB4AAAAAAAAAAAAkwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -114,11 +114,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Pipe.h",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Pipe.h",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Pipe.h",
               "RelativeDocumentMoniker": "ChessProject\\Pipe.h",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Pipe.h",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Pipe.h",
               "RelativeToolTip": "ChessProject\\Pipe.h",
               "ViewState": "AgIAAIkAAAAAAAAAAAAnwJMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -128,9 +128,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "Manager.h",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Manager.h",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Manager.h",
               "RelativeDocumentMoniker": "ChessProject\\Manager.h",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Manager.h",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Manager.h",
               "RelativeToolTip": "ChessProject\\Manager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -138,13 +138,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Manager.cpp",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Manager.cpp",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Manager.cpp",
               "RelativeDocumentMoniker": "ChessProject\\Manager.cpp",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Manager.cpp",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Manager.cpp",
               "RelativeToolTip": "ChessProject\\Manager.cpp",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAnwBcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAnwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-28T17:56:59.241Z",
               "EditorCaption": ""
@@ -153,9 +153,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Piece.h",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Piece.h",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Piece.h",
               "RelativeDocumentMoniker": "ChessProject\\Piece.h",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Piece.h",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Piece.h",
               "RelativeToolTip": "ChessProject\\Piece.h",
               "ViewState": "AgIAABIAAAAAAAAAAAAgwB4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -163,11 +163,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Piece.cpp",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Piece.cpp",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Piece.cpp",
               "RelativeDocumentMoniker": "ChessProject\\Piece.cpp",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Piece.cpp",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Piece.cpp",
               "RelativeToolTip": "ChessProject\\Piece.cpp",
               "ViewState": "AgIAADQAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -177,9 +177,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Board.h",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Board.h",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Board.h",
               "RelativeDocumentMoniker": "ChessProject\\Board.h",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Board.h",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Board.h",
               "RelativeToolTip": "ChessProject\\Board.h",
               "ViewState": "AgIAACQAAAAAAAAAAAAAACYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -187,42 +187,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Board.cpp",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Board.cpp",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Board.cpp",
               "RelativeDocumentMoniker": "ChessProject\\Board.cpp",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Board.cpp",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Board.cpp",
               "RelativeToolTip": "ChessProject\\Board.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-18T16:26:56.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T16:26:56.644Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Rook.cpp",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Rook.cpp",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Rook.cpp",
               "RelativeDocumentMoniker": "ChessProject\\Rook.cpp",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Rook.cpp",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Rook.cpp",
               "RelativeToolTip": "ChessProject\\Rook.cpp",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-19T19:50:39.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T19:50:39.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Rook.h",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Rook.h",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Rook.h",
               "RelativeDocumentMoniker": "ChessProject\\Rook.h",
-              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\Chess_Eden_Guy_2024\\ChessSolution\\ChessProject\\Rook.h",
+              "ToolTip": "C:\\Users\\Cyber_User\\Desktop\\EkronotExercises\\Ex7_Eden_chess\\ChessSolution\\ChessProject\\Rook.h",
               "RelativeToolTip": "ChessProject\\Rook.h",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-19T20:00:33.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T20:00:33.501Z"
             }
           ]
         }
