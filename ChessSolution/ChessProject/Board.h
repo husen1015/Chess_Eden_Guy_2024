@@ -34,7 +34,7 @@ public:
 	bool SetBoard(const std::string newBoard); //Set the new board acfter every move
 
 	// Move piece methods
-	bool tryToMove(const std::string moveCode);
+	char tryToMove(const std::string moveCode);
 
 	//Getters
 	

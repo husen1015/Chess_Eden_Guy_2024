@@ -56,30 +56,32 @@ bool Board::SetBoard(const std::string newBoard)
 	return false;
 }
 
-bool Board::tryToMove(const std::string moveCode)
+char Board::tryToMove(const std::string moveCode)
 {
 	std::string src = moveCode.substr(0, 2);
 	std::string dst = moveCode.substr(2, 2);
 
+	char valadityCode = '0';
 	char movingPieceType = this->getPieceByPlace(src);
 	Piece* piece = createPieceByType(movingPieceType, src);
 
-	if (piece->checkMoveValidaty(dst, this->getCode()))
+	if (!piece) // Checking if there was a piece in src
 	{
-		int dstIndex = getIndexByPlace(dst);
-		int srcIndex = getIndexByPlace(src);
+		valadityCode = '2';
+		return valadityCode;
+	}
+	valadityCode = piece->checkMoveValidaty(dst, this->getCode());
+	
+	if (valadityCode == '0' || valadityCode == '1')
+	{
 		this->_board[getIndexByPlace(dst)] = this->_board[getIndexByPlace(src)]; // Moving the piece in the boardCode to the destination
 		this->_board[getIndexByPlace(src)] = '#'; // Removing the piece now that it is in its new location
-		return true;
+		this->_board[CHESS_BOARD_SIZE] = !(this->_board[CHESS_BOARD_SIZE] - '0') + '0'; // replacing 0 with 1 or 1 with 0 - changing the currant player
 	}
 	delete piece;
 
-	return false;
+	return valadityCode;
 }
-
-
-
-
 
 
 // Helper methods

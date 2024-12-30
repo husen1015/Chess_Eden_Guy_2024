@@ -36,19 +36,21 @@ bool Piece::checkIfMoveHasMovement(const std::string dst) const
 
 bool Piece::checkIfEatsOwnPiece(const std::string dst, const std::string boardCode) const
 {
-    /*
-    char pieceInDst = Board::getPieceByPlace(boardCode, dst)
-	if (pieceInDst != '#')
+    char pieceInDst = Board::getPieceByPlace(dst, boardCode);
+
+    if (pieceInDst != '#')
 	{
 		return false; // There is no piece in dst
 	}
-    if(pieceInDst == )
-	return  this->getIsWhite()::getPieceColor(pieceInDst)// There is a piece in dst, now we need to check if it is the same color
-	*/
+
+    if (getIsWhite(pieceInDst) == this->getIsWhite())
+    {
+        return true;
+    }
     return false;
 }
 
-bool Piece::checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const
+bool Piece::checkIfMoveRevealsCheck(const std::string dst, const std::string boardCode) const
 {
     return false;
 }

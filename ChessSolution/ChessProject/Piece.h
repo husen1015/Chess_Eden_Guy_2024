@@ -21,10 +21,10 @@ public:
 	//Setters
 	void setIsWhite(bool isWhite);
 
-	virtual bool checkMoveValidaty(const std::string dst, const std::string boardCode) const = 0;
+	virtual char checkMoveValidaty(const std::string dst, const std::string boardCode) const = 0;
 	bool checkIfMoveHasMovement(const std::string dst) const;
 	bool checkIfEatsOwnPiece(const std::string dst, const std::string boardCode) const;
-	bool checkIfMoveRevealsCheck(const bool isKingWhite, const std::string dst) const;
+	bool checkIfMoveRevealsCheck(const std::string dst, const std::string boardCode) const;
 
 
 	// Virtual methods

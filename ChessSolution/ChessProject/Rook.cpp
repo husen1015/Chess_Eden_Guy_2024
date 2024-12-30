@@ -10,17 +10,32 @@ Rook::~Rook()
 }
 
 
-bool Rook::checkMoveValidaty(const std::string dst, const std::string boardCode) const
+char Rook::checkMoveValidaty(const std::string dst, const std::string boardCode) const
 {
-	bool check = true;
+	char valadityCode = '0';
 
-	/* lets make every move valid :D (for testing)
-	check = this->checkIfMoveSuitsPieceAbilites(src, dst);
-	check = check && this->checkIfMoveHasMovement(src, dst);
-	check = check && this->checkPiecesInDiagonalMove(src, dst, boardCode);
-	//check = check && this->checkEatsOwnPiece(dst);
-	_place[0] == dst[0] || _place[1] == dst[1];
-	*/
-	return check;
+	if (!this->checkIfMoveHasMovement(dst))
+	{
+		valadityCode = '7';
+	}
+	else if (!(_place[0] == dst[0] || _place[1] == dst[1]))
+	{
+		valadityCode = '6';
+	}
+	else if (!this->checkPiecesInStrightMove(dst, boardCode))
+	{
+		valadityCode = '6';
+	}
+	else if (this->checkIfEatsOwnPiece(dst, boardCode))
+	{
+		valadityCode = '3';
+	}
+	else if (this->checkIfMoveRevealsCheck(dst, boardCode))
+	{
+		valadityCode = '4';
+	}
+
+	
+	return valadityCode;
 }
 

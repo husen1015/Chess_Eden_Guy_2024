@@ -19,7 +19,7 @@ public:
 	bool GetIsWhite() const;
 	int GetTurn() const;
 
-	std::string processMessageFromGraphics(const std::string msg); 
+	char processMessageFromGraphics(const std::string msg); 
 
 private:
 	bool _isPlayerWhite;

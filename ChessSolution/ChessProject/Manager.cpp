@@ -22,10 +22,14 @@ void Manager::newGame(Pipe& p)
 	p.sendMessageToGraphics(msgToGraphics); // send the board string
 
 	std::string msgFromGraphics = p.getMessageFromGraphics().c_str();
-
+	//msgToGraphics[0] = '\0';
+	for (int i = 0; i < 1024;  i++)
+	{
+		msgToGraphics[i] = '\0';
+	}
 	while (msgFromGraphics != "quit")
 	{
-		strcpy_s(msgToGraphics, this->processMessageFromGraphics(msgFromGraphics).c_str()); // msgToGraphics should contain the result of the operation
+		msgToGraphics[0] = this->processMessageFromGraphics(msgFromGraphics); // msgToGraphics should contain the result of the operation
 
 		// return result to graphics		
 		p.sendMessageToGraphics(msgToGraphics);
@@ -45,20 +49,20 @@ int Manager::GetTurn() const
 }
 
 
-std::string Manager::processMessageFromGraphics(const std::string msg)
+char Manager::processMessageFromGraphics(const std::string msg)
 {
-	bool success = this->_board.tryToMove(msg); // Sending the move code (msg) to try to move the pieces accordingly
+	char valadityCode = this->_board.tryToMove(msg); // Sending the move code (msg) to try to move the pieces accordingly
 	
-	if (success)
+	if (valadityCode == '0')
 	{
 		this->_isPlayerWhite = !this->_isPlayerWhite; // Change current player color
 		this->_turn++; //Add to number of turns
 		std::cout << "The move IS VALID. I think." << std::endl;
-		return "0";
+		
 	}
 	else
 	{
 		std::cout << "The move IS NOT VALID. I think (:" << std::endl;
-		return "1";
 	}
+	return valadityCode;
 }
